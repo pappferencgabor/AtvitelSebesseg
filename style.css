@@ -1,0 +1,51 @@
+html {
+    min-height: 100%;
+}
+body {
+    color: white;
+    background: linear-gradient(#93a08f, #b87841, #5b3f38);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#calc {
+    background-color: rgba(255, 255, 255, 0.26);
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+}
+#eredmeny {
+    display: none;
+}
+label, span {
+    font-size: 22px;
+}
+select {
+    width: 100px;
+    height: 30px;
+    background-color: #cfa580;
+    text-align: center;
+    margin-left: 40px;
+    box-shadow: 4px 4px 4px #5b3f38;
+}
+#szamolbtn {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #d39a67;
+    box-shadow: 4px 4px 4px #5b3f38;
+}
+#szamolbtn:hover, select:hover {
+    background-color: #cf823e;
+    cursor: pointer;
+}
+#kapacitas {
+    width: 100px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#eredSpan {
+    color: antiquewhite;
+}

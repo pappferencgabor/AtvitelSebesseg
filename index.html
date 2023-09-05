@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Átvitel-Sebesség számoló</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circle-icons-calculator.svg/512px-Circle-icons-calculator.svg.png?20160314153501">
+</head>
+
+<body>
+    <h1>Átvitel-Sebesség számoló</h1>
+
+    <div id="calc">
+        <form>
+            <div class="calcreg">
+                <label for="kapacitas">Kapacitás</label>
+                <input type="number" name="kapacitas" id="kapacitas">
+                <select name="kapacitasME" id="kapacitasME">
+                    <option value="Mb">Mb</option>
+                    <option value="Gb">Gb</option>
+                    <option value="Tb">Tb</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="calcreg">
+                <label for="atviteliseb">Átviteli sebesség</label>
+                <input type="range" name="atviteliseb" id="atviteliseb" min="10" max="5000" value="2500"
+                    oninput="atvitelDisplay()">
+                <span id="atvitelSebesseg"></span>
+                <select name="kapacitasseb" id="kapacitasseb">
+                    <option value="Mbps">mbps</option>
+                    <option value="KBps">KBps</option>
+                    <option value="MBps">MBps</option>
+                    <option value="GBps">GBps</option>
+                </select>
+            </div>
+            <br><br>
+
+            <button onclick="szamol()" type="button" id="szamolbtn">Számol</button>
+        </form>
+
+        <h2 id="eredmeny">Az átvitel sebbessége: <span id="eredSpan">???</span> másodperc</h2>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
